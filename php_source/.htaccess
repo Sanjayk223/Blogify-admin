@@ -1,0 +1,15 @@
+# ShortEarn Mobile - Clean URL Rewriting (.htaccess)
+# Supports Apache, LiteSpeed, cPanel
+
+RewriteEngine On
+RewriteBase /
+
+# Prevent directory listings
+Options -Indexes
+
+# If requested file or directory exists physically, serve directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirect /code to /step.php?code=code (Except existing .php files)
+RewriteRule ^([a-zA-Z0-9_-]+)$ step.php?code=$1 [L,QSA]
