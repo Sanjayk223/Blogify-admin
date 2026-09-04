@@ -1,0 +1,6 @@
+{
+  "name": "ShortEarn Mobile - URL Shortener",
+  "description": "Mobile-first URL shortener with 3-page countdown ads, traffic-based earnings, UPI withdrawals, and role-based admin panel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
